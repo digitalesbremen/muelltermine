@@ -1,0 +1,33 @@
+openapi: 3.1.0
+
+info:
+  title: Muelltermine API
+  version: ${VERSION}
+  contact:
+    name: Lars Michaelis
+    email: mail@larmic.de
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+paths:
+  /:
+    get:
+      summary: Returns open api documentation.
+      responses:
+        '200':
+          description: open-api-3.yaml
+          content:
+            'text/plain':
+              schema:
+                type: string
+  /api:
+    get:
+      summary: Returns open api documentation.
+      responses:
+        '200':
+          description: open-api-3.yaml
+          content:
+            'text/plain':
+              schema:
+                type: string
